@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
     var isValid = true;
     let messages = [];
-    let username = document.getElementById('username').value;
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
+    let username = document.getElementById('username').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let password = document.getElementById('password').value.trim();
 
     if(username.length < 3){
         isValid = false;
